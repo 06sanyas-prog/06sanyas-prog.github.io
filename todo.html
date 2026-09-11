@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do List — Sanya Raj</title>
+  <meta name="description" content="A to-do list project built with HTML, CSS and vanilla JavaScript, using localStorage." />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .todo-project-label {
+      display: block;
+      margin-top: 24px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch theme">☀️</button>
+      <a class="brand" href="index.html">Sanya<span>.</span></a>
+      <button id="navToggle" class="nav-toggle" type="button" aria-controls="navLinks" aria-expanded="false">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="learning.html">Learning</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <a class="btn btn-ghost btn-sm" href="projects.html">← Back to Projects</a>
+        <span class="eyebrow" style="display:block;margin-top:24px">Project</span>
+        <h2>To-Do List</h2>
+        <p class="lead">
+          Add a task, check it off when it's done, or delete it. Your list is saved in this
+          browser with localStorage, so it's still here next time you visit.
+        </p>
+
+        <div class="todo-app">
+          <form class="todo-input-row" id="todoForm">
+            <input type="text" id="todoInput" placeholder="Add a new task..." required />
+            <button class="btn btn-primary btn-sm" type="submit">Add</button>
+          </form>
+          <ul class="todo-list" id="todoList"></ul>
+          <p class="form-note" id="todoEmpty">No tasks yet — add your first one above.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+              
+      <span>Made with ❤️ and lots of coffee. © 2026 Sanya Raj | CSE (IoT) | Turning ideas into code</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="todo.js"></script>
+</body>
+</html>

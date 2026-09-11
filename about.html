@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me — Sanya Raj</title>
+  <meta name="description" content="My learning journey, goals and what I'm looking for as a 3rd-semester BTech student." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch theme">☀️</button>
+      <a class="brand" href="index.html">Sanya<span>.</span></a>
+      <button id="navToggle" class="nav-toggle" type="button" aria-controls="navLinks" aria-expanded="false">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="learning.html">Learning</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ WHO I AM ============ -->
+    <section>
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">About me</span>
+          <h2>Who I am</h2>
+          
+          <p class="lead">
+            I’m a 3rd-semester BTech CSE(IOT) student at Bakhtiyarpur College Of Engineering.
+            I enjoy programming, breaking problems into smaller pieces, and the moment code finally works.
+          </p>
+          <p class="lead">
+            My interests sit across programming fundamentals, Data Structures &amp; Algorithms,
+            web development, and a growing curiosity about AI/ML and IoT. I don’t have large
+            industry projects yet — what I do have is a consistent habit of learning and building
+            something small every week.
+          </p>
+          <ul class="chips">
+            <li class="chip">Programming</li>
+            <li class="chip">DSA</li>
+            <li class="chip">Web Development</li>
+            <li class="chip">AI curiosity</li>
+            <li class="chip">IoT</li>
+          </ul>
+        </div>
+
+        
+        <div class="profile-card">
+          <img class="profile-photo" src="profile.png" alt="Portrait of Sanya Raj" />
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ============ LEARNING JOURNEY ============ -->
+    <section>
+      <div class="container">
+        <span class="eyebrow">Timeline</span>
+        <h2>My learning journey</h2>
+        
+        <ul class="timeline timeline-spaced">
+          <li>
+            <strong>Semester 1–2 · Started with C</strong>
+            <span>Learned basics of programming in c and python , web development — my first taste of real programming logic.</span>
+          </li>
+          <li>
+            <strong>Python basics</strong>
+            <span>Picked up Python for quick scripting and problem solving; loved how fast I could turn ideas into code.</span>
+          </li>
+          <li>
+            <strong>Started DSA</strong>
+            <span>Arrays, strings and basic problem patterns — practising regularly to build problem-solving stamina.</span>
+          </li>
+          <li>
+            <strong>Now · Java + Web development</strong>
+            <span>Learning Java (OOP fundamentals) alongside HTML, CSS and JavaScript, including DOM manipulation and events.</span>
+          </li>
+          <li>
+            <strong>My Achievements</strong>
+            <span>Participated in SIH in 1st semester and secured 1st position in ByteHack Hackathon alongside my team.</span>
+          </li>
+          <li>
+            <strong>Next up</strong>
+            <span>More projects, deeper DSA, a frontend framework like React, and exploring AI/ML basics and IoT hardware.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ============ GOALS + LOOKING FOR ============ -->
+    <section>
+      <div class="container">
+        <span class="eyebrow">Where I'm heading</span>
+        <h2>Goals &amp; what I’m looking for</h2>
+
+        <div class="grid grid-spaced">
+          <div class="card">
+            <h3>My goals</h3>
+            
+            <ul class="clean-list">
+              <li>Strengthen DSA and problem-solving skills consistently.</li>
+              <li>Build more web projects and learn a frontend framework (React).</li>
+              <li>Contribute actively to the college coding club and hackathons.</li>
+              <li>Explore AI/ML basics and useful developer tools.</li>
+              <li>Long term: a career in IoT — connected devices solving real problems.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>What I’m looking for</h3>
+            <ul class="clean-list">
+              <li>Mentorship from seniors who’ve walked this path.</li>
+              <li>Collaboration on club projects, however small my part starts out.</li>
+              <li>Code reviews — honest feedback helps me improve faster.</li>
+              <li>Any chance to learn by building with a team.</li>
+            </ul>
+            <div class="btn-row">
+              <a class="btn btn-primary btn-sm" href="contact.html">Get in touch</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ============ RESUME ============ -->
+    <section id="resume">
+      <div class="container">
+        <span class="eyebrow">Resume</span>
+        <h2>My resume</h2>
+        <p class="lead">Want the short version of my skills and journey in one place? Download it below.</p>
+
+        <div class="card resume-card">
+          <h3>Resume (PDF)</h3>
+          <p>Updated as I learn and build more.</p>
+          <div class="btn-row">
+            <!-- EDIT: replace resume.pdf with your actual resume file, placed in this same folder -->
+            <a class="btn btn-primary btn-sm" href="resume.docx" target="_blank" rel="noopener" download>Download Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>Made with ❤️ and lots of coffee. © 2026 Sanya Raj | CSE (IoT) | Turning ideas into code</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

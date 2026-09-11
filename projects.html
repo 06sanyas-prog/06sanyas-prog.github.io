@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects &amp; Practice Work — Sanya Raj</title>
+  <meta name="description" content="Small learning projects built with HTML, CSS and JavaScript, plus planned projects." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch theme">☀️</button>
+      <a class="brand" href="index.html">Sanya<span>.</span></a>
+      <button id="navToggle" class="nav-toggle" type="button" aria-controls="navLinks" aria-expanded="false">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="learning.html">Learning</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <span class="eyebrow">Projects</span>
+        <h2>Projects &amp; Practice Work</h2>
+        <p class="lead">
+          These are small projects I am working on while learning. I’m continuously adding more.
+        </p>
+
+        <div class="grid projects-grid">
+
+          <!-- PROJECT 1 -->
+          <article class="card">
+            <div class="card-head">
+              <h3>Personal Portfolio Website</h3>
+              <span class="badge">Completed</span>
+            </div>
+            <p>
+              This site — a multi-page personal portfolio built from scratch with HTML, CSS and
+              JavaScript, including a light/dark theme toggle, a responsive mobile nav, and
+              separate pages for About, Skills, Projects and Contact.
+            </p>
+            
+            <img class="project-img" src="project-portfolio.svg" alt="Screenshot placeholder for the portfolio homepage" />
+            <ul class="chips">
+              <li class="chip">HTML</li><li class="chip">CSS</li><li class="chip">JavaScript</li>
+              <li class="chip">Responsive</li>
+            </ul>
+            <p class="mono project-status">Status: Completed</p>
+            <div class="btn-row">
+              
+              <a class="btn btn-ghost btn-sm" href="https://github.com/06sanyas-prog" target="_blank" rel="noopener">GitHub</a>
+              <a class="btn btn-ghost btn-sm" href="index.html">Live Demo</a>
+            </div>
+          </article>
+
+          <!-- PROJECT 2 -->
+          <article class="card">
+            <div class="card-head">
+              <h3>Simple Calculator</h3>
+              <span class="badge">Completed</span>
+            </div>
+            <p>
+              A basic calculator that handles addition, subtraction, multiplication and
+              division, built with HTML, CSS and vanilla JavaScript to practise DOM
+              manipulation and event handling.
+            </p>
+           
+            <img class="project-img" src="project-calculator.svg" alt="Screenshot placeholder for the calculator app" />
+            <ul class="chips">
+              <li class="chip">HTML</li><li class="chip">CSS</li><li class="chip">JavaScript</li>
+              <li class="chip">DOM</li>
+            </ul>
+            <p class="mono project-status">Status: Completed</p>
+            <div class="btn-row">
+              
+              <a class="btn btn-ghost btn-sm" href="https://github.com/06sanyas-prog" target="_blank" rel="noopener">GitHub</a>
+              <a class="btn btn-ghost btn-sm" href="calculator.html">Live Demo</a>
+            </div>
+          </article>
+
+          <!-- PROJECT 3 -->
+          <article class="card">
+            <div class="card-head">
+              <h3>To-Do List App</h3>
+              <span class="badge">Completed</span>
+            </div>
+            <p>
+              A to-do list where you can add, complete and delete tasks. Tasks are saved in the
+              browser with localStorage, so your list is still there when you come back.
+            </p>
+            
+            <img class="project-img" src="project-todo.svg" alt="Screenshot placeholder for the to-do list app" />
+            <ul class="chips">
+              <li class="chip">HTML</li><li class="chip">CSS</li><li class="chip">JavaScript</li>
+              <li class="chip">LocalStorage</li>
+            </ul>
+            <p class="mono project-status">Status: Completed</p>
+            <div class="btn-row">
+              
+              <a class="btn btn-ghost btn-sm" href="https://github.com/06sanyas-prog" target="_blank" rel="noopener">GitHub</a>
+              <a class="btn btn-ghost btn-sm" href="todo.html">Live Demo</a>
+            </div>
+          </article>
+
+          <!-- PROJECT 4 (planned) -->
+          <article class="card">
+            <div class="card-head">
+              <h3>Smart Timetable &amp; Attendance Tracker</h3>
+              <span class="badge">Planned</span>
+            </div>
+            <p>
+              A web-based system to manage class timetables and track student attendance,
+              with reminders and simple analytics.
+            </p>
+            <ul class="chips">
+              <li class="chip">HTML</li><li class="chip">CSS</li><li class="chip">JavaScript</li>
+              <li class="chip">Future: Backend + DB</li>
+            </ul>
+            <p class="mono project-status">Status: Concept / In planning</p>
+            <div class="btn-row">
+              <a class="btn btn-ghost btn-sm" href="#" aria-disabled="true">GitHub</a>
+              <a class="btn btn-ghost btn-sm" href="#" aria-disabled="true">Live Demo</a>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="lead projects-followup">
+          More projects are on the way — follow along on
+         
+          <a href="https://github.com/06sanyas-prog" target="_blank" rel="noopener">GitHub</a>.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>Made with ❤️ and lots of coffee. © 2026 Sanya Raj | CSE (IoT) | Turning ideas into code</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

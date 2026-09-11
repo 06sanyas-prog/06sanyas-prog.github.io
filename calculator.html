@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator — Sanya Raj</title>
+  <meta name="description" content="A simple calculator project built with HTML, CSS and vanilla JavaScript." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch theme">☀️</button>
+      <a class="brand" href="index.html">Sanya<span>.</span></a>
+      <button id="navToggle" class="nav-toggle" type="button" aria-controls="navLinks" aria-expanded="false">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="learning.html">Learning</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <a class="btn btn-ghost btn-sm" href="projects.html">← Back to Projects</a>
+        <span class="eyebrow" style="display:block;margin-top:24px">Project</span>
+        <h2>Simple Calculator</h2>
+        <p class="lead">
+          Handles addition, subtraction, multiplication and division. Click the buttons or use
+          your keyboard (numbers, + − * /, Enter for equals, Backspace, Escape to clear).
+        </p>
+
+        <div class="calculator">
+          <div class="calc-display" id="calcDisplay">0</div>
+          <div class="calc-buttons">
+            <button class="calc-btn calc-btn-fn" type="button" data-action="clear">C</button>
+            <button class="calc-btn calc-btn-fn" type="button" data-action="backspace">⌫</button>
+            <button class="calc-btn calc-btn-op" type="button" data-value="/">÷</button>
+            <button class="calc-btn calc-btn-op" type="button" data-value="*">×</button>
+
+            <button class="calc-btn" type="button" data-value="7">7</button>
+            <button class="calc-btn" type="button" data-value="8">8</button>
+            <button class="calc-btn" type="button" data-value="9">9</button>
+            <button class="calc-btn calc-btn-op" type="button" data-value="-">−</button>
+
+            <button class="calc-btn" type="button" data-value="4">4</button>
+            <button class="calc-btn" type="button" data-value="5">5</button>
+            <button class="calc-btn" type="button" data-value="6">6</button>
+            <button class="calc-btn calc-btn-op" type="button" data-value="+">+</button>
+
+            <button class="calc-btn" type="button" data-value="1">1</button>
+            <button class="calc-btn" type="button" data-value="2">2</button>
+            <button class="calc-btn" type="button" data-value="3">3</button>
+            <button class="calc-btn calc-btn-equals" type="button" data-action="equals">=</button>
+
+            <button class="calc-btn calc-btn-zero" type="button" data-value="0">0</button>
+            <button class="calc-btn" type="button" data-value=".">.</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© 2026 Sanya Raj — Bakhtiyarpur College Of Engineering</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="calculator.js"></script>
+</body>
+</html>

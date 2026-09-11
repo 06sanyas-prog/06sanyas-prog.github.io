@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Sanya Raj</title>
+  <meta name="description" content="Reach out for collaborations, coding club projects or learning opportunities." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch theme">☀️</button>
+      <a class="brand" href="index.html">Sanya<span>.</span></a>
+      <button id="navToggle" class="nav-toggle" type="button" aria-controls="navLinks" aria-expanded="false">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="learning.html">Learning</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <span class="eyebrow">Contact</span>
+        <h2>Let’s build something together</h2>
+        <p class="lead">
+          Feel free to reach out for collaborations, coding club projects, or learning opportunities.
+          I reply to everything.
+        </p>
+
+        <div class="grid contact-grid">
+
+          <!-- EDIT: your email, phone, GitHub and LinkedIn -->
+          <div class="card">
+            <h3>Reach me directly</h3>
+            <ul class="clean-list">
+              <li>Email: <a href="mailto:06.sanya.s@gmail.com">06.sanya.s@gmail.com</a></li>
+             
+            
+              <li>GitHub: <a href="https://github.com/06sanyas-prog" target="_blank" rel="noopener">github.com/06sanyas-prog</a></li>
+              <li>LinkedIn: <a href="https://www.linkedin.com/in/sanya-raj-cse007/" target="_blank" rel="noopener">linkedin.com/in/sanya-raj-cse007/</a></li>
+            </ul>
+            <div class="btn-row">
+              <a class="btn btn-primary btn-sm" href="mailto:06.sanya.s@gmail.com">Send an email</a>
+            </div>
+          </div>
+
+         
+          <div class="card">
+            <h3>Or send a message</h3>
+            <form class="form" onsubmit="event.preventDefault(); this.reset(); document.getElementById('formStatus').textContent = 'Thanks! This form is a placeholder — please email me directly for now.';">
+              <div>
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your name" required />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" required />
+              </div>
+              <div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="What would you like to work on?" required></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit">Send message</button>
+             
+              <p class="form-note" id="formStatus"></p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>Made with ❤️ and lots of coffee. © 2026 Sanya Raj | CSE (IoT) | Turning ideas into code</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
