@@ -1,9 +1,3 @@
-/* =========================================================
-   styles.css  —  Shared styles for all pages
-   Edit colors here to re-theme the whole site.
-   ========================================================= */
-
-/* ---------- THEME TOKENS: DARK (default) ---------- */
 :root {
   --bg: #0d1117;
   --bg-soft: #131a24;
@@ -12,16 +6,16 @@
   --border: #263140;
   --text: #e6edf3;
   --text-muted: #9aa7b6;
-  --primary: #7c9cff;        /* accent blue-violet */
+  --primary: #7c9cff;        
   --primary-strong: #a4b8ff;
-  --accent: #59e0c5;         /* teal accent */
+  --accent: #59e0c5;         
   --on-primary: #0d1117;
   --shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
   --radius: 14px;
   --nav-bg: rgba(13, 17, 23, 0.85);
 }
 
-/* ---------- THEME TOKENS: LIGHT (pink / lavender / white) ---------- */
+
 [data-theme="light"] {
   --bg: #fdf7fb;
   --bg-soft: #f7f0fb;
@@ -30,15 +24,15 @@
   --border: #ecd9ee;
   --text: #3a2f42;
   --text-muted: #7b6b86;
-  --primary: #b98cd9;        /* lavender */
+  --primary: #b98cd9;       
   --primary-strong: #9a6bc4;
-  --accent: #f0a6c8;         /* soft pink */
+  --accent: #f0a6c8;         
   --on-primary: #ffffff;
   --shadow: 0 14px 34px rgba(185, 140, 217, 0.22);
   --nav-bg: rgba(253, 247, 251, 0.85);
 }
 
-/* ---------- RESET / BASE ---------- */
+
 * { box-sizing: border-box; }
 
 html { scroll-behavior: smooth; }
@@ -69,7 +63,7 @@ a:hover { color: var(--accent); }
   padding: 0 20px;
 }
 
-/* ---------- NAVBAR (sticky, same on every page) ---------- */
+
 .navbar {
   position: sticky;
   top: 0;
@@ -87,7 +81,7 @@ a:hover { color: var(--accent); }
   min-height: 64px;
 }
 
-/* Theme toggle sits in the upper LEFT corner */
+
 .theme-toggle {
   display: inline-flex;
   align-items: center;
@@ -307,7 +301,7 @@ h3 { font-size: 1.1rem; }
   white-space: nowrap;
 }
 
-/* ---------- TIMELINE (About page) ---------- */
+
 .timeline { list-style: none; margin: 8px 0 0; padding: 0 0 0 26px; border-left: 2px solid var(--border); }
 .timeline li { position: relative; padding: 0 0 26px 8px; }
 .timeline li:last-child { padding-bottom: 0; }
@@ -325,7 +319,6 @@ h3 { font-size: 1.1rem; }
 .timeline strong { display: block; color: var(--text); }
 .timeline span { color: var(--text-muted); font-size: 0.95rem; }
 
-/* ---------- LISTS ---------- */
 .clean-list { list-style: none; padding: 0; margin: 10px 0 0; }
 .clean-list li {
   position: relative;
@@ -340,7 +333,7 @@ h3 { font-size: 1.1rem; }
   color: var(--primary);
 }
 
-/* ---------- FORM (Contact page) ---------- */
+
 .form { display: grid; gap: 14px; max-width: 520px; margin-top: 18px; }
 label { font-size: 13px; font-weight: 700; color: var(--text-muted); display: block; margin-bottom: 6px; }
 input, textarea {
@@ -360,7 +353,7 @@ input:focus, textarea:focus {
 }
 .form-note { font-size: 13px; color: var(--text-muted); }
 
-/* ---------- FOOTER ---------- */
+
 footer {
   border-top: 1px solid var(--border);
   background: var(--bg-soft);
@@ -377,12 +370,11 @@ footer {
   color: var(--text-muted);
 }
 
-/* ---------- UTILITIES ---------- */
 .divider { height: 1px; background: var(--border); border: 0; margin: 0; }
 .center { text-align: center; }
 .stack-sm > * + * { margin-top: 10px; }
 
-/* ---------- PROJECT SCREENSHOTS (Projects page) ---------- */
+
 .project-img {
   width: 100%;
   border-radius: 10px;
@@ -390,7 +382,7 @@ footer {
   margin-top: 14px;
 }
 
-/* ---------- CALCULATOR (Projects: Simple Calculator) ---------- */
+
 .calculator {
   max-width: 340px;
   margin: 28px 0 0;
@@ -436,7 +428,7 @@ footer {
 .calc-btn-equals { background: var(--primary); color: var(--on-primary); border-color: var(--primary); }
 .calc-btn-zero { grid-column: span 3; }
 
-/* ---------- TO-DO LIST (Projects: To-Do List App) ---------- */
+
 .todo-app { max-width: 480px; margin: 28px 0 0; }
 .todo-input-row { display: flex; gap: 10px; }
 .todo-input-row input { flex: 1; }
